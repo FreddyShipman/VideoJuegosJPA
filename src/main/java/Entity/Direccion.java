@@ -63,5 +63,12 @@ public class Direccion implements Serializable {
         this.colonia = colonia;
     }
     
-    
+    @Override
+    public String toString() {
+        return "Direccion{" + 
+           "id=" + id + 
+           ", calle='" + calle + '\'' +
+           ", colonia='" + colonia + '\'' +
+           '}';
+    }
 }

@@ -20,7 +20,7 @@ public class Logro implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String nombre;
-    private String puntos;
+    private int puntos;
     
     @ManyToOne
     @JoinColumn(name = "videojuego_id")
@@ -29,7 +29,7 @@ public class Logro implements Serializable {
     public Logro() {
     }
 
-    public Logro(Long id, String nombre, String puntos, VideoJuego videojuego) {
+    public Logro(Long id, String nombre, int puntos, VideoJuego videojuego) {
         this.id = id;
         this.nombre = nombre;
         this.puntos = puntos;
@@ -52,11 +52,11 @@ public class Logro implements Serializable {
         this.nombre = nombre;
     }
 
-    public String getPuntos() {
+    public int getPuntos() {
         return puntos;
     }
 
-    public void setPuntos(String puntos) {
+    public void setPuntos(int puntos) {
         this.puntos = puntos;
     }
 
@@ -68,5 +68,12 @@ public class Logro implements Serializable {
         this.videojuego = videojuego;
     }
     
-    
+    @Override
+    public String toString() {
+        return "Logro{" + 
+           "id=" + id + 
+           ", nombre='" + nombre + '\'' + 
+           ", puntos=" + puntos + 
+           '}';
+    }
 }

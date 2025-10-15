@@ -96,9 +96,13 @@ public class Jugador implements Serializable {
 
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
+    } 
+    
+    @Override
+    public String toString() {
+        return "Jugador{" + 
+           "id=" + id + 
+           ", pseudonimo='" + pseudonimo + '\'' + 
+           '}';
     }
-    
-    
-    
-    
 }

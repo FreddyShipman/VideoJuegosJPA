@@ -98,5 +98,13 @@ public class VideoJuego implements Serializable {
         this.logros = logros;
     }
     
-    
+    @Override
+    public String toString() {
+        return "VideoJuego{" + 
+           "id=" + id + 
+           ", nombre='" + nombre + '\'' + 
+           ", puntaje=" + puntaje + 
+           ", desarrolladora='" + desarrolladora + '\'' + 
+           '}';
+    }
 }

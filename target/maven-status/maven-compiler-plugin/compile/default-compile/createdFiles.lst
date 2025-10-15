@@ -1,5 +1,13 @@
+Interfaces\IJugadorDAO.class
+Interfaces\ILogroDAO.class
+videojuegojpa\VideoJuego\VideoJuegoJPA.class
+DAO\JugadorDAO.class
 Entity\Direccion.class
 Entity\VideoJuego.class
+Interfaces\IDireccionDAO.class
+DAO\DireccionDAO.class
+DAO\VideoJuegoDAO.class
 Entity\Jugador.class
 Entity\Logro.class
-videojuegojpa\VideoJuego\VideoJuegoJPA.class
+DAO\LogroDAO.class
+Interfaces\IVideoJuegoDAO.class
